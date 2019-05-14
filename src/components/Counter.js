@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 import { increment, decrement } from '../actions';
 
 class Counter extends Component {
-    state = {
-        count: this.props.count
-    }
+ 
     increment = (e) =>{
        
         this.props.increment()
