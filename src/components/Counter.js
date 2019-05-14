@@ -7,21 +7,12 @@ class Counter extends Component {
         count: this.props.count
     }
     increment = (e) =>{
-        const add = this.state.count + 1
-        this.setState({
-            
-            count: add
-        })
-        this.props.increment(this.state.count)
+       
+        this.props.increment()
        
     }
     decrement = (e) =>{
-        const sub = this.state.count - 1
-        this.setState({
-            
-            count: sub
-        })
-        this.props.increment(this.state.count)
+        this.props.decrement()
        
     }
 
